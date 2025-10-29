@@ -14,7 +14,7 @@ st.set_page_config(
 @st.cache_resource
 def load_model():
     model = joblib.load('models/svm_model.joblib')
-    vectorizer = joblib.load('models/tfidf_vectorizer.joblib')
+    vectorizer = joblib.load('models/vectorizer.joblib')
     return model, vectorizer
 
 try:
