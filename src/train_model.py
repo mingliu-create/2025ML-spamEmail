@@ -39,3 +39,4 @@ print(classification_report(y_test, pred))
 joblib.dump(model, "models/svm_model.joblib")
 joblib.dump(vectorizer, "models/vectorizer.joblib")
 print("💾 Model and vectorizer saved to 'models/' successfully.")
+python src\train_model.py
